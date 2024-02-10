@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="src/sass/main.scss" />
+    <link rel="shortcut icon" href="src/img/shortcut.jpeg" />
+    <script type="module" src="src/javascript/constroller.js"></script>
+    <title>News Application</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__logo">
+        <img src="src/img/logo.jpg" alt="Logo" class="header__logo-image" />
+      </div>
+      <div class="header__heading">
+        <h1 class="header__heading1">
+          <span class="header__heading1--primary">News</span>
+          <span class="header__heading1--secondary">Application</span>
+        </h1>
+      </div>
+    </header>
+
+    <main>
+      <div class="container">
+        <div class="container__sidebar">
+          <div class="categories">
+            <h2 class="heading2">News Categories</h2>
+            <ul class="categories__list">
+              <li class="categories__item apple-info">
+                <img
+                  src="src/img/svg/apple-logo.svg"
+                  alt=""
+                  class="categories__icon"
+                />
+                Apple News Right Now
+              </li>
+
+              <li class="categories__item tesla-info">
+                <img
+                  src="src/img/svg/tesla.svg"
+                  alt=""
+                  class="categories__icon"
+                />
+                Tesla News
+              </li>
+
+              <li class="categories__item bs-info">
+                <img
+                  src="src/img/svg/dollar-logo.svg"
+                  alt=""
+                  class="categories__icon"
+                />
+                Top Business Headlines in US
+              </li>
+
+              <li class="categories__item tech-info">
+                <img
+                  src="src/img/svg/tech.svg"
+                  alt=""
+                  class="categories__icon"
+                />
+                Top Headlines from TechCrunch
+              </li>
+
+              <li class="categories__item wsj-info">
+                <img
+                  src="src/img/svg/wsj-icon.svg"
+                  alt=""
+                  class="categories__icon"
+                />
+                Wall Street Journal
+              </li>
+            </ul>
+          </div>
+
+          <p class="copyright">
+            &copy; 2024 Copyright by
+            <a
+              class="linkedin-link"
+              target="_blank"
+              href="https://linkedin.com/in/brian-kagwanja-
+a68913244"
+              >Brian Kagwanja</a
+            >. Use for learning or your portfolio. Don't claim as your own.
+          </p>
+        </div>
+
+        <div class="container__news">
+          <div class="news">
+            <div class="intro">
+              <svg class="intro__svg">
+                <use xlink:href="src/img/sprite.svg#icon-emoji-flirt"></use>
+              </svg>
+              <p class="intro__para">Click on a category to load some news</p>
+            </div>
+
+            <!-- <div class="news__info">
+              <p class="news__title">
+                <span class="news__key">Title:</span>
+                <span class="news__headline"
+                  >Why LI Stock Remains the Top Choice Among China EV
+                  Plays</span
+                >
+              </p>
+
+              <div class="news__group">
+                <p class="news__content">
+                  Uncertainty over the future growth of China’s EV sector is
+                  keeping top plays in the space at low prices. Li Auto
+                  (NASDAQ:LI) is no exception. Although LI stock has yet to
+                  tumble back to its 52-week low, shares in the electric vehicle
+                  manufacturer have decline…",Lorem ipsum dolor sit amet
+                  consectetur adipisicing elit. Tempore a asperiores autem
+                  voluptas adipisci voluptatem itaque! Deserunt magnam non nisi
+                  inventore impedit? At aliquid voluptates soluta exercitationem
+                  perferendis minus quasi.
+                </p>
+              </div>
+
+              <div class="news__group">
+                <p class="news__title">
+                  <span class="news__key">Aurthor</span>
+                  Miles Matheson
+                </p>
+
+                <p class="news__title">
+                  <span class="news__key">Date Published: </span>
+                  22/01/2024
+                </p>
+              </div>
+
+              <div class="news__url">
+                <a
+                  href="https://biztoc.com/x/9e4ae5cee5f593db"
+                  class="news__link"
+                  >Read More...</a
+                >
+              </div>
+            </div> -->
+          </div>
+
+          <!-- <div class="spinner">
+            <svg>
+              <use xlink:href="src/img/sprite.svg#icon-loader"></use>
+            </svg>
+          </div> -->
+
+          <!-- <div class="error">
+            <img src="src/img/error.jpg" alt="error" class="error__img" />
+            <p class="error__para">No news Found!! Please try again</p>
+          </div> -->
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

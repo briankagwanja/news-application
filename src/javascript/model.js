@@ -43,8 +43,6 @@ export const loadAppleResults = async function () {
   try {
     const data = await getJSON(API_URL_APPLE);
 
-    console.log(data);
-
     state.search.results.apple = data.articles.map(article => {
       return {
         author: article.author,
@@ -54,8 +52,6 @@ export const loadAppleResults = async function () {
         url: article.url,
       };
     });
-
-    console.log(state.search.results);
   } catch (err) {
     console.log(err);
     throw err;
@@ -66,8 +62,6 @@ export const loadTeslaResults = async function () {
   try {
     const data = await getJSON(API_URL_TESLA);
 
-    console.log(data);
-
     state.search.results.tesla = data.articles.map(article => {
       return {
         author: article.author,
@@ -77,8 +71,6 @@ export const loadTeslaResults = async function () {
         url: article.url,
       };
     });
-
-    console.log(state.search.results);
   } catch (err) {
     console.log(err);
     throw err;
@@ -89,8 +81,6 @@ export const loadTechResults = async function () {
   try {
     const data = await getJSON(API_URL_TECH);
 
-    console.log(data);
-
     state.search.results.tech = data.articles.map(article => {
       return {
         author: article.author,
@@ -100,8 +90,6 @@ export const loadTechResults = async function () {
         url: article.url,
       };
     });
-
-    console.log(state.search.results);
   } catch (err) {
     console.log(err);
     throw err;
@@ -112,8 +100,6 @@ export const loadWsjResults = async function () {
   try {
     const data = await getJSON(API_URL_WSJ);
 
-    console.log(data);
-
     state.search.results.wsj = data.articles.map(article => {
       return {
         author: article.author,
@@ -123,8 +109,6 @@ export const loadWsjResults = async function () {
         url: article.url,
       };
     });
-
-    console.log(state.search.results);
   } catch (err) {
     console.log(err);
     throw err;
@@ -135,8 +119,6 @@ export const loadBusinessResults = async function () {
   try {
     const data = await getJSON(API_URL_USBUS);
 
-    console.log(data);
-
     state.search.results.usbus = data.articles.map(article => {
       return {
         author: article.author,
@@ -146,8 +128,6 @@ export const loadBusinessResults = async function () {
         url: article.url,
       };
     });
-
-    console.log(state.search.results);
   } catch (err) {
     console.log(err);
     throw err;

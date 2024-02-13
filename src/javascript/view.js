@@ -70,7 +70,6 @@ class NewsView {
   _hideSidebarAfterClick() {
     this._sidebar.addEventListener('click', function (e) {
       const item = e.target.closest('.categories__list');
-      console.log(item);
       if (!item) return;
 
       this.classList.add('hidden');
@@ -94,7 +93,6 @@ class NewsView {
 
   _stickyNav(entries) {
     const [entry] = entries;
-    console.log(entry);
 
     if (entry.isIntersecting) {
       document.querySelector('.menu__icon-box').classList.add('sticky');
@@ -154,8 +152,6 @@ class NewsView {
   }
 
   _generateMarkup() {
-    console.log(this._data);
-
     return `
         ${this._data
           .map(article => {

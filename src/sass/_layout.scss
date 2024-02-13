@@ -1,9 +1,14 @@
 .header {
-  padding: 2rem;
+  position: fixed;
+  top: 0;
+  z-index: 150;
+
   display: flex;
   justify-content: center;
   align-items: center;
-  // position: fixed;
+  width: 100%;
+  margin: 0 auto;
+  background-color: #fff;
 
   &__logo-image {
     height: 7rem;
@@ -15,6 +20,10 @@
     margin-left: 2rem;
     text-transform: uppercase;
     line-height: 1.2;
+
+    @include respond(phone) {
+      font-size: 1.3rem;
+    }
   }
 
   &__heading1 {
@@ -38,18 +47,38 @@
 }
 
 .container {
+  // height: 100vh;
   margin: 0 1rem;
   display: grid;
   grid-template-columns: 35rem 1fr;
   grid-gap: 1.5rem;
+  transition: all 0.5s;
+
+  @include respond(tabPort) {
+    display: block;
+  }
 
   &__sidebar {
+    background-color: #fff;
+    backdrop-filter: 10px;
+    position: relative;
+
     width: 35rem;
     height: 80vh;
     position: fixed;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    transition: all 0.5s;
+
+    @include respond(tabLand) {
+      // opacity: 1;
+      // visibility: visible;
+    }
+
+    @include respond(tabPort) {
+      width: 30rem;
+    }
   }
 
   &__news {
@@ -57,35 +86,5 @@
 
     grid-column: 2 / span 1;
     // min-height: 100%;
-  }
-}
-
-.menu-icon {
-  &__icon {
-    position: relative;
-    *,
-    *::before,
-    *::after {
-      display: inline-block;
-      width: 2rem;
-      height: 2px;
-      background-color: #494848;
-    }
-
-    *::before,
-    *::after {
-      content: '';
-      position: absolute;
-    }
-
-    *::before {
-      top: 2rem;
-      left: 1rem;
-    }
-
-    &::after {
-      top: 6rem;
-      left: 1rem;
-    }
   }
 }
